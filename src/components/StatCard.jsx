@@ -3,7 +3,7 @@ import "./StatCard.css";
 const StatCard = (props) => {
   return (
     <div className="StatCard">
-      <p>{props.message}</p>
+      <b>{props.message}</b>
     </div>
   );
 };

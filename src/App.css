@@ -3,3 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+.App {
+  display: flex;
+}
+
+.Stats {
+  display: flex;
+  justify-content: space-between;
+}

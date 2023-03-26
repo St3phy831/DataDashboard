@@ -1,4 +1,13 @@
 .SideBar {
   background-color: rgb(144, 184, 245);
   padding: 10px;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  padding: 20px;
+  overflow-x: hidden;
+  align-items: center;
 }

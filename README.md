@@ -1,4 +1,4 @@
-# Web Development Project 5 - *Marvel Datadashboard*
+# Web Development Project 5 - *Marvel DataDashboard*
 
 Submitted by: **Stephanie Hernandez**
 

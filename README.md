@@ -2,25 +2,27 @@
 
 Submitted by: **Stephanie Hernandez**
 
-This web app: **allows users to explore marvel characters. They are able to filter by name or by the starting character of their name.**
+This web app: **allows users to explore marvel characters. They are able to filter by name, by number of stories, or by the starting letter of the character's name.**
 
-Time spent: **X** hours spent in total
+Time spent: **8.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The list displays a list of data fetched using an API call**
-- [ ] **Data uses the useEffect React hook and async/await syntax**
-- [ ] **The app dashboard includes at least three summary statistics about the data such as**
-  - [ ] *insert details*
-- [ ] **A search bar allows the user to search for an item in the fetched data**
-- [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The list displays a list of data fetched using an API call**
+- [x] **Data uses the useEffect React hook and async/await syntax**
+- [x] **The app dashboard includes at least three summary statistics about the data such as**
+  - [x] *the number of characters returned*
+  - [x] *the total number of characters in the dataset*
+  - [x] *percentage of characters shown*
+- [x] **A search bar allows the user to search for an item in the fetched data**
+- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
 
 The following **optional** features are implemented:
 
 - [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
+- [x] Filters use different input types such as a text input, a selection, or a slider
 - [ ] The user can enter specific bounds for filter values
 
 The following **additional** features are implemented:
@@ -31,10 +33,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with [GIPHY CAPTURE](https://giphy.com/apps/giphycapture)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -42,11 +44,13 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- I had a lot of challenges styling the app and getting bootstrap set up.
+- I initially wanted to use a different API, but I ran into a CORS issue, which I was unable to resolve. This has intrigued me into researching how to fix the issue. I would've put more effort into resolving it, but I'm limited on time to turn this in, so I chose a different API.
+- I also found it difficult planning how to tackle building this application.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Stephanie Hernandez & CodePath]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

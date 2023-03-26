@@ -1,0 +1,21 @@
+.InfoList {
+  background-color: rgb(144, 184, 245);
+  margin-left: 300px;
+  padding: 10px;
+}
+
+.characterInfo {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name,
+.stories {
+  width: 20%;
+}
+
+img {
+  width: 80px;
+  float: right;
+}

@@ -2,8 +2,8 @@ const Search = (props) => {
   return (
     <div className="Search">
       <input
-        type="text"
-        placeholder="Search Name"
+        type={props.searchType}
+        placeholder={props.placeHolder}
         onChange={(inputString) => props.searchItems(inputString.target.value)}
       />
     </div>

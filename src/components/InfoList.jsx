@@ -8,14 +8,27 @@ const API_KEY = import.meta.env.VITE_APP_API_KEY;
 const InfoList = () => {
   const [list, setList] = useState(null);
   const [filteredResults, setFilteredResults] = useState([]);
-  const [searchInput, setSearchInput] = useState("");
+  const [searchName, setSearchName] = useState("");
+  const [searchStories, setSearchStories] = useState(-1);
   const [letter, setLetter] = useState("a");
 
-  const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
+  const searchByName = (searchValue) => {
+    setSearchName(searchValue);
     if (searchValue !== "") {
       const filteredData = list.filter((item) =>
         item["name"].toLowerCase().includes(searchValue.toLowerCase())
+      );
+      setFilteredResults(filteredData);
+    } else {
+      setFilteredResults(list);
+    }
+  };
+
+  const searchByStories = (searchValue) => {
+    setSearchStories(searchValue);
+    if (searchValue >= 0) {
+      const filteredData = list.filter(
+        (item) => item["stories"]["available"] == searchValue
       );
       setFilteredResults(filteredData);
     } else {
@@ -44,10 +57,19 @@ const InfoList = () => {
   return (
     <div className="InfoList">
       <div className="filters">
-        <Search searchItems={searchItems}></Search>
+        <Search
+          searchType="text"
+          placeHolder="Search by Name"
+          searchItems={searchByName}
+        ></Search>
+        <Search
+          searchType="number"
+          placeHolder="Search by Stories"
+          searchItems={searchByStories}
+        ></Search>
         <Dropdown filterByFirstLetter={filterByFirstLetter}></Dropdown>
       </div>
-      {searchInput.length > 0
+      {searchName.length > 0 || searchStories >= 0
         ? filteredResults.map((character) => (
             <div className="characterInfo">
               <div className="name">

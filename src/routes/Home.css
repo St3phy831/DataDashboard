@@ -1,0 +1,12 @@
+.Stats {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+}
+
+.message {
+  margin-left: 300px;
+  background-color: rgb(144, 184, 245);
+  border-radius: 10px;
+  padding: 15px;
+}

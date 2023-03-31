@@ -3,14 +3,14 @@
   flex-direction: column;
   text-align: center;
 }
+
 .Menu a {
   color: black;
   font-size: 20px;
   padding-bottom: 20px;
-}
-.Menu a:link {
   text-decoration: none;
 }
+
 .Menu a:hover {
-  color: rgb(195, 5, 5);;
+  color: rgb(195, 5, 5);
 }

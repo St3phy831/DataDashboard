@@ -4,7 +4,7 @@ Submitted by: **Stephanie Hernandez**
 
 This web app: **allows users to explore marvel characters. They are able to filter by name, by number of stories, or by the starting letter of the character's name.**
 
-Time spent: **4.5** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [GIPHY CAPTURE](https://giphy.com/apps/giphycapture)

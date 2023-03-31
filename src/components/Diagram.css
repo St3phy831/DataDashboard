@@ -1,0 +1,12 @@
+.Diagram {
+  display: flex;
+  justify-content: center;
+}
+
+.Bar {
+  margin-left: 300px;
+  margin-bottom: 50px;
+  width: 50%;
+  background-color: rgb(144, 184, 245);
+  border-radius: 10px;
+}

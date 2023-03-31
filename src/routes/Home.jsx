@@ -1,8 +1,12 @@
+import { useState } from "react";
 import InfoList from "../components/InfoList";
+import Diagram from "../components/Diagram";
 import StatCard from "../components/StatCard";
 import "./Home.css";
 
 const Home = () => {
+  const [list, setList] = useState(null);
+
   return (
     <div className="Home">
       <div className="Stats">
@@ -20,7 +24,8 @@ const Home = () => {
         name. By default, the first 50 characters starting with the letter 'A'
         are shown.
       </p>
-      <InfoList></InfoList>
+      {list && <Diagram list={list}></Diagram>}
+      <InfoList list={list} setList={setList}></InfoList>
     </div>
   );
 };

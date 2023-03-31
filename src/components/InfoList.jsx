@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Search from "./Search";
 import Dropdown from "./Dropdown";
 import "./InfoList.css";
@@ -73,7 +74,9 @@ const InfoList = () => {
         ? filteredResults.map((character) => (
             <div className="characterInfo">
               <div className="name">
-                <b>{character["name"]}</b>
+                <Link to={"/" + character["id"]}>
+                  <b>{character["name"]}</b>
+                </Link>
               </div>
               <div className="stories">
                 <p>Number of Stories: {character["stories"]["available"]}</p>
@@ -91,7 +94,9 @@ const InfoList = () => {
           list.map((character) => (
             <div className="characterInfo">
               <div className="name">
-                <b>{character["name"]}</b>
+                <Link to={"/" + character["id"]}>
+                  <b>{character["name"]}</b>
+                </Link>
               </div>
               <div className="stories">
                 <p>Number of Stories: {character["stories"]["available"]}</p>

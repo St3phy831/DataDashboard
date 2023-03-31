@@ -4,6 +4,7 @@ import InfoList from "./components/InfoList";
 import SideBar from "./components/SideBar";
 import StatCard from "./components/StatCard";
 import Home from "./routes/Home";
+import DetailView from "./routes/DetailView";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SideBar />}>
           <Route index element={<Home />} />
+          <Route path="/:id" element={<DetailView />} />
         </Route>
       </Routes>
     </div>
